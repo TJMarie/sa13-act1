@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact Adrien</title>
+		<link type="text/css" href="adrien.css" rel="stylesheet">
+		<link type="text/css" href="adriencontact.css" rel="stylesheet">
+		<meta charset="UTF-8">
+		<meta name="adrien Contact" content="Collective gallery to display my art and reach adrien fanbase. 
+		Links to my music, paintings, journal, social media, and anything else I need.">.
+		<meta name="author" content="Tara Jones">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+	<div id="heading">
+		<h1>M	i	r	a	a	n</h1>
+		<h2>Music, Paintings, and Incoherent Ramblings</h2> 
+	</div>
+	
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+<!--links to other places-->
+	<div class="topnav" id="myTopnav">	
+		<a href="index.adrienhome.html"target="_parent">Home</a>
+		<a href="adrienmusic.html" target="_parent">Music</a><!--
+		<a href="adriengallery.html" target="_parent">Gallery</a>
+		<a href="adrienjournal.html" target="_parent">Journal</a>-->
+		<a href="adriencontact.html" target="_top" class="active">Contact</a>
+		<a href="adrienabout.html" target="_parent">About</a>
+		<a href="javascript:void(0);" class="icon" onclick="topNav()">
+    		<i class="fa fa-bars"></i>
+  		</a>
+  		</div> <!--end of navigation links-->
+  	<script> /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+	function topNav() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "topnav";
+	  }
+	}
+  </script>
+
+  
+		<!--social media links-->
+	<div class="adrien">	
+		<h5>Social Media</h5>
+		<div class="linksSocial">
+		<a href="http://instagram.com/adrien_tried/" target="_blank">
+		<img src="icons/instagram.png" alt="adrien on Instagram"/></a>
+		<h6>Follow for activism and updates.</h6>
+		</div>
+		<div class="linksSocial">
+		<a href="http://twitter.com/adrienTried/" target="_blank">
+		<img src="icons/twitter.png" alt="adrien on Twitter"/></a>
+		<h6>Send a message or tweet me.</h6>
+		</div>
+		<div class="linksSocial">
+		<a href="http://tumblr.com/blog/view/adrien-tried/" target="_blank">
+		<img src="icons/tumblr.png" alt="adrien on Tumblr"/></a>
+		<h6>Send your art to be reblogged.</h6>
+		</div>
+		<div class="linksSocial">
+		<a href="http://vsco.com/mmiirraann/" target="_blank">
+		<img src="icons/vsco.png" alt="adrien on Vsco"/></a>
+		<h6>Exclusive behind-the-scenes photos.</h6>
+		</div><!--end of div class social medias-->
+		
+		<div class="container">
+			<form id="contact" action="ContactForm.php" method="post">
+			<h3>Contact adrien</h3>
+			<fieldset>
+				<input name="name" placeholder="Name" type="text" tabindex="1"
+				 required autofocus>
+			</fieldset>
+			<fieldset>
+				<input name="email" placeholder="Email Address" type="email" tabindex="2"
+				required>
+			</fieldset>
+			<fieldset>
+				<input name="subject" placeholder="Subject" type="text" tabindex="2"
+				required>
+			</fieldset>
+
+			<fieldset>
+				<textarea name="message" placeholder="Your Message" tabindex="5" required></textarea>
+			</fieldset>
+			<fieldset>
+				<button name="submit" type="submit" id="contact-submit">Submit</button>
+			</fieldset>
+			</form>
+			</div><!--end of div class container-->
+		</div>
+		
+		<!--copyright bullshit-->
+
+
+		<div class="footer">
+		<p class="copyright">&copy;2020 by adrien</p>
+		</div>
+	</body>
+</html>

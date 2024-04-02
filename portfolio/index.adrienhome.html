@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Adrien Home</title>
+		<link type="text/css" href="adrien.css" rel="stylesheet">
+		<link rel="stylesheet" href="w3.css">
+		<meta charset="UTF-8">
+		<meta name="Home" content="Collective gallery and shop to display and sell art and reach Adrien Jones clientele. Links to my music, paintings, journal, social media, and anything else I need.">.
+		<meta name="author" content="Tara Jones">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div id="heading">
+			<h1><span class="adrien-title">A</span><span class="adrien-title">D</span><span class="adrien-title">R</span><span class="adrien-title">I</span><span class="adrien-title">E</span><span class="adrien-title">N</span></h1>
+			<h2>Music, Art, and More</h2> 
+		</div>
+		
+		<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+	<!--links to other places-->
+		<div class="topnav" id="myTopnav">	
+			<a href="index.adrienhome.html"target="_top" class="active">Home</a>
+			<a href="adrienmusic.html" target="_parent">Music</a><!--
+			<a href="adriengallery.html" target="_parent">Gallery</a>
+			<a href="adrienjournal.html" target="_parent">Journal</a>-->
+			<a href="adriencontact.html" target="_parent">Contact</a>
+			<a href="adrienabout.html" target="_parent">About</a>
+			<a href="javascript:void(0);" class="icon" onclick="topNav()">
+	    		<i class="fa fa-bars"></i>
+	  		</a>
+	  		</div>
+	
+	<!-- start introduction -->
+		<div class="home">
+		<!--scrolling gallery of art-->
+			<div class="w3-content w3-display-container">
+			<img class="artShow"src="art/selfportrait.jpg" alt="">
+			<img class="artShow"src="art/mothersmilk.jpg" alt="">
+			<img class="artShow"src="art/galactic.jpg" alt="">
+			<img class="artShow"src="art/blue.jpg" alt="">
+			<img class="artShow"src="art/obsessivethoughts.jpg" alt="">
+			<img class="artShow"src="art/anxiety.jpg" alt="">
+			</div>
+	
+			<script>
+	  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+				function topNav() {
+				  var x = document.getElementById("myTopnav");
+				  if (x.className === "topnav") {
+				    x.className += " responsive";
+				  } else {
+				    x.className = "topnav";
+				  }
+				}
+				var slideIndex = 0;
+				carousel();
+				
+				function carousel() {
+				  var i;
+				  var x = document.getElementsByClassName("artShow");
+				  for (i = 0; i < x.length; i++) {
+				    x[i].style.display = "none";
+				  }
+				  slideIndex++;
+				  if (slideIndex > x.length) {slideIndex = 1}
+				  x[slideIndex-1].style.display = "block";
+				  setTimeout(carousel, 5000); // Change image every 5 seconds
+				}
+		</script>
+	
+		</div> <!--end of div class adrien-->
+		<div class="archive">
+			<h3 style="color:white">Archive</h3>
+			
+			<img src="art/adrien.png" alt="The adrien Logo in Korean Hangul superimposed on a blue, abstract painting of a tree.">
+			<img src="art/fantasia.png" alt="A fantasy landscape of a rocky shore, with an orange sea, pink sky, and blue grass.">
+			<img src="art/cells.png" alt="Smoke trails from a black clove cigarette, weaving in and out of increasingly black bars.">
+			<!--<img src="art/burningbush.png" alt="Abstract interpretation of a blue bush, the top devolving into yellow and red flame.">-->
+			<img src="art/heatdeath.png" alt="Abstract painting of an orange sun. Rays of light shoot outwards from it. The surrounding black space is marred.">
+			<img src="art/mobiuspieces.png" alt="Abstract album cover of black, white, blue, purple, pink, and orange crosshatched. 
+			'Mobius Pieces' at the bottom right. Band name Wabi Sabi in green.">
+			<img src="art/voyager.jpg" alt=".">
+			<img src="art/wavelength.jpg" alt=".">
+			<img src="art/hellfire.jpg" alt=".">
+			<img src="art/anxiety.jpg" alt=".">
+			<img src="art/galactic.jpg" alt=".">
+			<img src="art/obsessivethoughts.jpg" alt=".">
+			<img src="art/selfportrait.jpg" alt="">
+	
+		</div><!--end of div class archive-->
+
+<!--copyright bullshit-->
+		<div class="footer">
+		<p class="copyright">&copy;2020 by adrien</p>
+		</div><!--end of div class footer-->
+	</body>
+</html>

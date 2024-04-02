@@ -1,0 +1,28 @@
+h1{
+    background-color:black;
+    color: rgb(225, 253, 250);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-variant: small-caps;
+    letter-spacing: 5px;
+    margin: 0%;
+    padding: 50px, 50px, 50px, 50px;
+    text-align: center;
+}
+
+h3{
+    background-color: cadetblue;
+    color:aliceblue;
+    text-align: center;
+}
+
+#post{
+    margin: 10%;
+}
+
+#post p{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+footer{
+    text-align: right;
+}
