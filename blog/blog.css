@@ -13,6 +13,7 @@ h3{
     background-color: cadetblue;
     color:aliceblue;
     text-align: center;
+    padding: 10px
 }
 
 #post{
@@ -20,8 +21,8 @@ h3{
 }
 
 #post p{
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 footer{
     text-align: right;
